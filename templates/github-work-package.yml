@@ -1,0 +1,79 @@
+name: 完整功能工作包
+description: 记录一个可验收功能的范围、步骤、候选和独立验收，避免重复建单。
+title: "[WP] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        已有对应 Issue 时请直接续写，不为使用模板重复建单。
+        本表记录目标和计划；实际开发、送审、整改与 D 结论追加为短评论。
+        不上传受限素材、固件、凭据或未经批准的原始日志。开发完成不等于验收通过。
+  - type: input
+    id: ownership
+    attributes:
+      label: 工作包与责任人
+      placeholder: "WP-编号；父 Issue；实现者 C/H；独立验证者 D；关闭责任人"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 用户目标、必须做与不做
+      description: 写清需求来源、可操作结果、当前必须实现的行为及本批外事项。
+      placeholder: "需求编号／批准设计；本批必须……；本批不做……"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 实现步骤与验收条件
+      description: 3–7 项可验证步骤，完成时补上提交或证据；勾选步骤不能代替 D 的验收结论。
+      placeholder: |
+        - [ ] 明确入口、正常、取消/返回和失败行为
+        - [ ] 完成实现并交付可操作候选
+        - [ ] 执行相关自测并记录未覆盖项
+        - [ ] D 独立检查与整改复验
+        - [ ] 满足本包要求的实机及其他验收条件
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: 风险类型
+      options:
+        - 待确认（未完成风险判断）
+        - L0 纯文档或注释，不影响构建及契约
+        - L1 局部页面或业务变化
+        - L2 共享、硬件或高风险变化
+        - 里程碑或发布候选
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: 基线、检查清单与授权边界
+      description: 使用项目批准的检查频率，模板不覆盖已有门禁。受限细节以受控证据 ID 引用。
+      placeholder: |
+        手册版本／项目执行约定：
+        源码／资源／设计／SDK／工具链／硬件基线：
+        本轮必跑检查及命令入口：
+        允许复用的结果、来源及失效条件：
+        是否需要实机；已有操作授权范围：
+        公共接口、预算或发布条件是否变化：
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 当前结果与证据入口
+      description: 未执行写未执行。无原始证据不能填通过；原始日志和截图只存一份。
+      value: |
+        候选 ID：待生成
+        主机：未执行
+        目标构建：未执行
+        实机：未执行
+        D 独立结论：未执行
+        证据入口／受控证据 ID：待生成
+        已知限制与下一步：
+    validations:
+      required: true
