@@ -5,7 +5,7 @@
 ## 阅读方式
 
 - 主文档：[AI 协作项目开发手册](index.html)。
-- 直接使用：[Issue 过程记录与评论模板](index.html#issue-log)、[增量验收规则](index.html#incremental-review)、[iwatch 执行约定](projects/iwatch.html)。
+- 直接使用：[Issue 过程记录与评论模板](index.html#issue-log)、[增量验收规则](index.html#incremental-review)。
 - [GitHub 工作包表单](templates/github-work-package.yml)是可复制模板；没有自动安装到任何产品仓库，不需要为已有功能重复创建 Issue。
 - GitHub 仓库保存源文件，不直接呈现完整 HTML 页面。克隆或下载本仓库后，在浏览器打开根目录的 `index.html`，即可阅读完整排版；无需安装依赖。
 - 本仓库保持私有，未启用 GitHub Pages 或其他公开网页托管。
@@ -24,7 +24,6 @@
 
 ```text
 index.html                 完整手册，内容的唯一维护源
-projects/iwatch.html        iwatch 项目执行约定、角色入口与同步记录
 templates/github-work-package.yml  可复制到产品仓库的 Issue 表单
 assets/engineering.css     手册样式
 README.md                  仓库入口与阅读说明
@@ -33,7 +32,7 @@ README.md                  仓库入口与阅读说明
 
 ## 维护规则
 
-1. 通用规则只在 `index.html` 中维护；README 仅保留入口和摘要。`projects/` 只记项目适配、生效和同步，`templates/` 提供可复用表单，不复制整本手册。
+1. 通用规则只在 `index.html` 中维护；README 仅保留入口和摘要，`templates/` 提供可复用表单。具体项目的执行约定、角色入口和同步回执保留在各自项目的本地受控记录中，不默认上传本仓库。
 2. 涉及角色、流程或验收规则的修改，同步相关章节及版本标记。
 3. 提交前检查本地链接、章节锚点和浏览器显示。
 4. 不存放产品源码、设备日志、受限设计素材、密钥或账号凭据；具体项目的实施证据由各自项目管理。
