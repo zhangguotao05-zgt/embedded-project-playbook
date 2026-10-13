@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="适用于个人负责人和小型嵌入式团队的多角色协作、增量交付、分级审批与证据管理方案">
-  <title>AI 协作项目开发手册 v1.6 · 日常烧录与最小执行记录</title>
+  <title>嵌入式项目开发手册 v1.6 · 日常烧录与最小执行记录</title>
   <link rel="stylesheet" href="assets/engineering.css">
   <style>
     .lead{font-size:18px;color:#c6d4e7}.notice{padding:17px 20px;border:1px solid #3c6576;border-radius:12px;background:#10232e}.warning{border-color:#796739;background:#272216}
@@ -16,14 +16,14 @@
   </style>
 </head>
 <body>
-<header class="site-header"><a class="brand" href="index.html">AI 协作开发管理</a><span class="doc-name">下一项目可复用 · 协作开发手册 v1.6</span></header>
+<header class="site-header"><a class="brand" href="index.html">嵌入式开发管理</a><span class="doc-name">下一嵌入式项目可复用 · 协作手册 v1.6</span></header>
 <div class="page-shell">
 <nav class="toc" aria-label="文档目录"><ul>
   <li><a href="#recommendation">推荐配置</a></li><li><a href="#roles">角色、人数与权限</a></li><li><a href="#responsibilities">完整职责与增员条件</a></li><li><a href="#hardware">硬件工程师与验收交接</a></li><li><a href="#workflow">流程与三个关口</a></li><li><a href="#requirements">需求分析如何执行</a></li><li><a href="#parallel">如何并行且不互相覆盖</a></li><li><a href="#work-package">完整工作包模板</a></li><li><a href="#records">六类记录与唯一来源</a></li><li><a href="#issue-log">Issue 开发过程记录</a></li><li><a href="#quality">效率与质量如何兼顾</a></li><li><a href="#incremental-review">增量复核与结果复用</a></li><li><a href="#metrics">排期与进度指标</a></li><li><a href="#role-briefs">核心与硬件角色的任务说明</a></li><li><a href="#adoption">版本生效与角色同步</a></li><li><a href="#kickoff">下一项目如何启动</a></li><li><a href="#sources">适用边界</a></li>
   <li><a href="#code-quality">代码质量六项检查</a></li><li><a href="#routine-flashing">已验收固件的普通烧录</a></li><li><a href="#role-contract">正式角色与辅助意见</a></li><li><a href="#role-recovery">长任务恢复</a></li>
 </ul></nav>
 <main>
-<h1>让完整功能持续交付</h1>
+<h1>让嵌入式完整功能持续交付</h1>
 <p class="lead">从想法起步、需求尚未冻结的界面与嵌入式项目，软件与界面部分推荐 <strong>5 个核心 AI 角色＋1 位人类产品决策者</strong>；自研电路或 PCB 时另设 <strong>H：硬件工程师</strong>。需求分析有明确负责人；先把一个代表性功能从需求做到设备上，再扩展。</p>
 <p class="small">2026-10-08 · 协作规则 v1.6 · 假设：你负责产品决策，项目包含界面与嵌入式软件，可使用现成开发板或设计自己的硬件。角色数是配置建议，不是固定人数；硬件实测、电气安全及专业审查需要具备相应能力的人员承担。</p>
 <div class="notice">使用顺序：启动时先确认目标与范围、分配职责、约定验收和操作权限；再完成代表性设计与技术验证，交付首个端到端样板；之后按工作包滚动开发、独立验收并维护统一记录。</div>

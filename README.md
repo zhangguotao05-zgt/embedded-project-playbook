@@ -1,10 +1,10 @@
-# AI 协作开发管理
+# 嵌入式项目开发手册
 
-独立维护项目开发方法、角色分工、交付流程和验收规则的私有文档仓库。当前手册版本为 **v1.6**。
+面向 MCU 固件、嵌入式界面、软硬件协作、烧录和设备台架的私有文档仓库，独立维护项目方法、角色分工、交付流程和验收规则。当前手册版本为 **v1.6**。
 
 ## 阅读方式
 
-- 主文档：[AI 协作项目开发手册](index.html)。
+- 主文档：[嵌入式项目开发手册](index.html)。
 - 直接使用：[Issue 过程记录与评论模板](index.html#issue-log)、[增量验收规则](index.html#incremental-review)。
 - 固定职责：[正式角色与内部辅助的边界](index.html#role-contract)、[长任务恢复检查](index.html#role-recovery)。
 - 代码质量：[Q1–Q6 自检与独立验收](index.html#code-quality)，在现有交接中记录依据，不另建审批链。
